@@ -3,12 +3,15 @@ This is a router for a very simplistic CMS. It's browser based and requires
 no PHP or SQL backend. 
 
 It works by intercepting all links that end in *.phtml and dynamically 
-loading them in the #dynamic-container unless a data-target is specified
+loading them in the #dynamic-container unless a data-target is specified.
+
+It also loads div[data-load] boxes with their linked content
 
 This was hacked together in a few hours and comes with NO WARRANTY
 
 Syntax:
-<a href="pages/index.html" data-target="#target-div" data-history="yes">
+<a href="pages/index.phtml" data-target="#target-div" data-history="yes">
+<div data-load="pages/sidebar.phtml">
 */
 
 
